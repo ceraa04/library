@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@200&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Preahvihear&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --hdr--ftr--clr: white;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1.5fr 8fr 0.2fr;
+}
+.header{
+    background-color: var(--hdr--ftr--clr);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid black;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    padding: 1rem;
+}
+.header ul{
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 4rem;
+}
+.header ul li{
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+.main{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 2fr 0.1fr;
+}
+.main1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main2{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    align-items:center;
+    gap: 2rem;
+}
+.main2 h3{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.cards{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 0.1fr));
+}
+.card{
+    display: grid;
+    grid-template-rows: 1fr 2fr 0.5fr;
+    border: 2px solid black;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+.card p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+.dugmici{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.dugmici button{
+    padding: 1rem;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.poruka{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+.card p.naslov{
+    font-size: 1.5rem;
+    font-family: 'Preahvihear', sans-serif;
+}
+.card h3{
+    display: flex;
+    padding: 0.6rem;
+    font-weight: 600;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    width: 100%;
+
+}
+.main2 li{
+    margin: 1rem auto;
+    border-bottom: 2px solid black;
+}
+.polica{
+    border: 20px solid brown;
+    width: 50rem;
+    height: 25rem;
+}
+.dodajKnjigu{
+    margin: 5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.footer{
+    background-color: var(--hdr--ftr--clr);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    border-top: 2px solid black;
+}
+.footer p{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.footer img{
+    width: 10%;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+.unos{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    display: none;
+}
+.x{
+    cursor: pointer;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: black;
+    padding: 1.5rem;
+    border: 2px solid white;
+    color: white;
+}
+input[type = 'text']{
+    padding: 1rem 0.5rem;
+}
+.unesiKnjigu{
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+.unesi{
+    display: flex;
+    justify-content: center;
+}
+.greska p{
+    display: flex;
+    justify-content: center;
+}
+.greska{
+    display: none;
+}
